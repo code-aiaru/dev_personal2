@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+    <button onclick="writeReq()">판매글작성</button>
+    <button onclick="listReq()">판매글목록</button>
+</body>
+<script>
+    <!-- WRITE (INSERT) -->
+    const writeReq = () => {
+        location.href = "/product/write";
+    }
+    <!-- LIST (READ) -->
+    const listReq = () => {
+        location.href = "/product/list";
+    }
+</script>
+
+</html>

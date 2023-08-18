@@ -1,0 +1,27 @@
+# ?? ?? ??
+server:
+  port: 8098
+
+# database ?? ??
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/myboard
+    username: root
+    password: 1234
+
+  # spring data jpa ??
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+
+  thymeleaf:
+    prefix: classpath:templates/
+    suffix: .html
+    cache: false
+    check-template-location: true
